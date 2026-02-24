@@ -69,7 +69,7 @@ resources/ (或根目錄)
 * UI Framework: Java Swing
 * Database: MySQL 8.0
 
-## Library:
+## 🚀 Library:
 * Apache POI (Excel 處理)
 * MySQL Connector (JDBC)
 * Encoding: MS950 (Big5) / UTF-8
