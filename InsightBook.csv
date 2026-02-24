@@ -1,0 +1,37 @@
+情境描述,正確語法,類型(Type),所屬套件 (Package)
+冒險者提交了大量戰利品，數量多變，需準備 奧術口袋 (ArrayList) 收納。,new ArrayList<Loot>(),Class,java.util
+偵測到重複的資產殘影，需施展 禁忌結界 (HashSet) 進行排他性驗證。,hashset.add(item),Class,java.util
+戰利品湧入過快，必須讓高威脅物品優先進入 優先序列 (PriorityQueue)。,new PriorityQueue<>(cmp),Class,java.util
+冒險者提交的名冊中名稱帶有 空白雜質 (Whitespace)，需施展 淨化術 (trim)。,itemName.trim(),Class,java.lang
+收到逗號串接的 長條咒文 (String)，需執行 空間切割 (split) 轉為 秩序陣列 (Array)。,"str.split("","")",Class,java.lang
+為了讓物品具備 自我排序的天賦 (Comparable)，需在物件靈魂中植入契約。,implements Comparable,IF,java.lang
+提供外部規則對武器進行 瞬間整隊 (sort)，不需修改物品本身。,"Arrays.sort(list, cmp)",IF,java.util
+戰利品具備「鑑價保鮮期」，需呼叫 時之砂 (LocalDateTime) 進行當前時間刻印。,LocalDateTime.now(),Class,java.time
+你擁有的「自動整列寶箱」會依據價值對齊物品，需啟動 天秤法陣 (TreeSet)。,new TreeSet<>(),Class,java.util
+在極長的帳目名單中，以極高效率精確定位特定物品，施展 神速獵跡 (binarySearch)。,Collections.binarySearch(),Class,java.util
+面對整袋資產，記帳士開啟 魔力流 (Stream) 準備進行全自動化審核。,list.stream(),IF,java.util.stream
+啟動 神聖濾網 (Filter)，自動篩除所有不符合法規的混亂物品。,.filter(l -> l.isIllegal()),IF,java.util.function
+施展 轉化法陣 (Map)，將流中所有的外幣資產依據匯率轉為金幣。,.map(l -> l.toGold()),IF,java.util.function
+審核完畢，呼叫 萬物歸一 (ForEach) 將金幣一次性灌入金庫。,.forEach(l -> dao.add(l)),IF,java.util.function
+為了簡化繁瑣咒文，記帳士改用 簡約語法 (Lambda) 快速定義邏輯。,"(x, y) -> x + y",Syntax,(Built-in)
+使用 秘傳招式 (Method Reference)，直接引用現成的招式法陣。,Loot::getValue,Op,(Built-in)
+為了初始化新的公會數據而不需代價，呼叫 無盡之泉 (Supplier) 產生新實體。,() -> new Member(),IF,java.util.function
+指揮塔必須一邊接收物資一邊計算帳目，需召喚 身外化身 (Thread)。,new Thread(task).start(),Class,java.lang
+為讓一般物件具備執行能力，需賦予其 附身契約 (Runnable)。,implements Runnable,IF,java.lang
+多位會計師同時存取同一個金庫，需展開 絕對領域 (Synchronized)。,synchronized(this),KW,(Keyword)
+進行王國級大型審計時，需進入 奧術冥想 (sleep) 以緩衝處理節奏。,Thread.sleep(2000),Class,java.lang
+大結算日，主程序必須等待所有分身回報完畢，執行 時空合流 (join)。,subThread.join(),Class,java.lang
+公會規模擴大，需按照年份執行 創世開拓 (mkdirs) 建立檔案夾。,file.mkdirs(),Class,java.io
+準備下班，需將公會狀態進行 靈魂封印 (Serialization) 存入檔案。,oos.writeObject(guild),Class,java.io
+隔日上班，施展 亡者喚醒 (Deserialization) 恢復昨日的公會靈魂。,ois.readObject(),Class,java.io
+授予物件跨越時空界線的許可，需貼上 靈魂通行證 (Serializable)。,impl. Serializable,IF,java.io
+為了應對王國查帳，記帳士必須進行 金庫報表重鑄 (Excel/POI)。,new HSSFWorkbook(),Class,org.apache.poi.hssf
+為了在報表中區分冒險者等級，需建立多個 表格分頁 (Sheet)。,"book.createSheet(""S級"")",Class,org.apache.poi.hssf
+當流體魔力（位元流）輸入後出現亂碼，需使用 異界轉譯 (InputStreamReader)。,new InputStreamReader(is),Class,java.io
+建立通往王國中央金庫的 魔力管道 (Connection)。,DriverManager.getConn(),IF,java.sql
+為防禦外敵的 SQL 注入攻擊，使用 符文預製 (PreparedStatement)。,conn.prepareStmt(sql),IF,java.sql
+翻開查詢回來的 預言之書 (ResultSet)，逐行檢視真實帳目。,rs.next(),IF,java.sql
+結算混亂物品時偵測到 奧術崩潰 (Exception)，啟動 時空屏障 (Try-Catch)。,try { ... } catch (e),KW,(Keyword)
+偵測到受詛咒的帳目，記帳士必須主動執行 災厄釋放 (throw) 警告系統。,throw new BookEx(),KW,(Keyword)
+記帳士在名冊上進行 意志承襲 (Override)，優化前輩的公式。,@Override,Ann,java.lang
+設計一個「萬用傳送箱」，裝入任何類型資產皆能運作，需定義 虛擬容器 (Generics)。,"<E, T>",Syntax,(Built-in)
