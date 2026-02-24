@@ -65,11 +65,11 @@ resources/ (或根目錄)
 ```
 
 ## 🚀 技術棧 (Tech Stack)
-Language: Java 11+
-UI Framework: Java Swing
-Database: MySQL 8.0
+* Language: Java 11+
+* UI Framework: Java Swing
+* Database: MySQL 8.0
 
-Library:
-Apache POI (Excel 處理)
-MySQL Connector (JDBC)
-Encoding: MS950 (Big5) / UTF-8
+* Library:
+* Apache POI (Excel 處理)
+* MySQL Connector (JDBC)
+* Encoding: MS950 (Big5) / UTF-8
